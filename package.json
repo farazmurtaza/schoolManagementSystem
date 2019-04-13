@@ -1,0 +1,25 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "*",
+    "mysql": "*",
+    "nodemailer": "^4.7.0",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Faraz Murtaza",
+  "license": "ISC"
+}

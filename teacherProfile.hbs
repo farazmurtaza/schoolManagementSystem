@@ -1,0 +1,58 @@
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Teacher Panel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto" style="margin-left: 78%;">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/users/register">Student Registration</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/student/info1">Student Info</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/teacher/info">Teacher Info</a>
+          </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/admin/info1">Show All Students</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li> -->
+        </ul>
+
+      </div>
+    </nav><br>
+
+    <!-- <h1>Teacher Profile</h1> -->
+      <!-- <p>Welcome to your dashboard</p> -->
+    <div >
+<h2 class="page-header" style="margin-left: 20px;">Welcome to your profile, {{teacherInfo.firstName}}.</h2><br>
+<ul class="list-group"  style="margin-left: 20px; margin-right:40px;">
+  <li class="list-group-item"><strong>First Name:  </strong>{{teacherInfo.firstName}}</li>
+  <li class="list-group-item"><strong>Last Name:  </strong>{{teacherInfo.lastName}}</li>
+    <li class="list-group-item"><strong>Username:  </strong>{{teacherInfo.username}}</li>
+      <li class="list-group-item"><strong>Contact No:  </strong>{{teacherInfo.phoneno}}</li>
+</ul>
+</div><br>
+
+<form action="http://localhost:3000/teacher/logout" method="get">
+  <input type="submit" value="Logout" style="margin-left: 20px;"/>
+</form>
+
+
+      <!-- <div><strong>Registration No: </strong>{{teacherInfo.tregno}}</div>
+      <div><strong>First Name: </strong>{{teacherInfo.firstName}}</div>
+      <div><strong>Last Name: </strong>{{teacherInfo.lastName}}</div>
+      <div><strong>Username: </strong>{{teacherInfo.username}}</div>
+      <div><strong>Contact No: </strong>{{teacherInfo.phoneno}}</div>
+      <div><strong>Email: </strong>{{teacherInfo.email}}</div>
+      <div><strong>Subjects: </strong>{{teacherInfo.s1}}, {{teacherInfo.s2}}</div> -->
+  </body>
